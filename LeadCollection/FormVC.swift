@@ -12,7 +12,7 @@ class FormVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print("Form VC")
         // Do any additional setup after loading the view.
     }
     
