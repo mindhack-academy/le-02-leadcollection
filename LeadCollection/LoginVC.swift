@@ -19,8 +19,8 @@ class LoginVC: UIViewController {
         // Do any additional setup after loading the view.
         errorLabel.isHidden = true
         errorLabel.text = "Email sau parola gresite"
-        
         print("Primul commit cu Sourcetree")
+        
     }
 
     @IBAction func loginBtnWasPressed(_ sender: Any) {
