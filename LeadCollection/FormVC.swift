@@ -29,21 +29,45 @@ class FormVC: UIViewController {
     }
     
     @IBAction func sendBtnWasPressed(_ sender: Any) {
-        print(
-              nameTextField.text,
-              emailTextField.text,
-              phoneTextField.text,
-//              technologySegmentedControl.selectedSegmentIndex,
-              technologySegmentedControl.titleForSegment(at: technologySegmentedControl.selectedSegmentIndex),
-            
-            
-              reasonTextView.text,
-              
-              dateDataPicker.date)
+        
+        let user: User = User()
+        user.firstName = nameTextField.text
+        user.lastName = nameTextField.text
+        user.email = emailTextField.text
+        user.phone = phoneTextField.text
+        
+        print("----- USER -----")
+        print(user)
+        
+        let formData: FormData = FormData()
+        formData.user = user
+        formData.technology = technologySegmentedControl.selectedSegmentIndex
+        formData.reason = reasonTextView.text
+        formData.contactDate = dateDataPicker.date
+        
+        print("----- FORM DATA -----")
+        print(formData)
+        
+        // add to StorageManager
+        StorageManager.shared.addData(formData: formData)
+        // print StorageManager data
+        print(StorageManager.shared.getData())
+        //reset form
+        resetform()
     }
     
     @IBAction func resetBtnWasPressed(_ sender: Any) {
+        resetform()
+    }
+    
+    func resetform() {
+        self.nameTextField.text = ""
+        self.emailTextField.text = ""
+        self.phoneTextField.text = ""
+        self.dateDataPicker.date = Date()
+        self.technologySegmentedControl.selectedSegmentIndex = 0
         
+        self.nameTextField.becomeFirstResponder()
     }
     
     

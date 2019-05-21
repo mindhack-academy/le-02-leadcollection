@@ -34,7 +34,7 @@ class LoginVC: UIViewController {
             emailTextField.text = ""
             
             if let formVC = self.storyboard?.instantiateViewController(withIdentifier: "FormVC") {
-                self.present(formVC, animated: true, completion: nil)
+                self.navigationController?.pushViewController(formVC, animated: true)
             }
             
         } else {

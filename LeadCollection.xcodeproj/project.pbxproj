@@ -14,6 +14,9 @@
 		1875F9AA2284955F006AFEB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1875F9A82284955F006AFEB1 /* LaunchScreen.storyboard */; };
 		1875F9B22284A7BA006AFEB1 /* FormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875F9B12284A7BA006AFEB1 /* FormVC.swift */; };
 		1875F9B4228B21AD006AFEB1 /* ListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875F9B3228B21AD006AFEB1 /* ListTVC.swift */; };
+		189B7D4A229452200037C4BE /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B7D49229452200037C4BE /* Classes.swift */; };
+		189B7D4C229452500037C4BE /* FormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B7D4B229452500037C4BE /* FormData.swift */; };
+		189B7D4E2294585A0037C4BE /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B7D4D2294585A0037C4BE /* StorageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		1875F9AB2284955F006AFEB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1875F9B12284A7BA006AFEB1 /* FormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormVC.swift; sourceTree = "<group>"; };
 		1875F9B3228B21AD006AFEB1 /* ListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTVC.swift; sourceTree = "<group>"; };
+		189B7D49229452200037C4BE /* Classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
+		189B7D4B229452500037C4BE /* FormData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormData.swift; sourceTree = "<group>"; };
+		189B7D4D2294585A0037C4BE /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,9 @@
 				1875F9A62284955F006AFEB1 /* Assets.xcassets */,
 				1875F9A82284955F006AFEB1 /* LaunchScreen.storyboard */,
 				1875F9AB2284955F006AFEB1 /* Info.plist */,
+				189B7D49229452200037C4BE /* Classes.swift */,
+				189B7D4B229452500037C4BE /* FormData.swift */,
+				189B7D4D2294585A0037C4BE /* StorageManager.swift */,
 			);
 			path = LeadCollection;
 			sourceTree = "<group>";
@@ -144,7 +153,10 @@
 				1875F9A22284955F006AFEB1 /* LoginVC.swift in Sources */,
 				1875F9B4228B21AD006AFEB1 /* ListTVC.swift in Sources */,
 				1875F9B22284A7BA006AFEB1 /* FormVC.swift in Sources */,
+				189B7D4E2294585A0037C4BE /* StorageManager.swift in Sources */,
+				189B7D4A229452200037C4BE /* Classes.swift in Sources */,
 				1875F9A02284955F006AFEB1 /* AppDelegate.swift in Sources */,
+				189B7D4C229452500037C4BE /* FormData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
