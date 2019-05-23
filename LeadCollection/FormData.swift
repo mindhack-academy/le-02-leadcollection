@@ -8,17 +8,16 @@
 
 import Foundation
 
-class FormData {
+class FormData: Codable {
     var user: User?
-    
     var technology: Int?
-    
     var reason: String?
-    
     var contactDate: Date?
+    
+    
 }
 
-class User {
+class User: Codable {
 
     var firstName: String?
     var lastName: String?
@@ -26,7 +25,8 @@ class User {
     var phone: String?
 }
 
-class Technology {
+class Technology: Codable {
     var title: String?
     var uid: String?
 }
+

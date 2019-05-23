@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FormVC: UIViewController {
+class FormVC: UITableViewController {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var phoneTextField: UITextField!
